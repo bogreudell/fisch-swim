@@ -1,9 +1,11 @@
 body
 	&.template-product
+		font-family $serif
+		
 		.page-width
 			max-width none !important
 			padding-left 0 !important
-			padding-right 0 !important
+			// padding-right 0 !important
 			
 		.clear
 			clear both
@@ -38,3 +40,23 @@ body
 			&__meta
 				float left
 				width 40%
+			
+				input
+					label()
+				
+				select
+					border 1px solid #000
+					border-radius 0
+					background url(//cdn.shopify.com/s/files/1/0267/3229/8274/t/3/assets/ico-select.svg?v=1206820173969048361) 95% center no-repeat
+					label()
+				
+				button
+					border 1px solid #000
+					border-radius 0
+					background #000
+					label()
+					color #fff
+
+			&__title,
+			&__price
+				heading()

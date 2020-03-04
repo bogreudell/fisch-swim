@@ -1,7 +1,9 @@
+body.template-product {
+  font-family: $serif;
+}
 body.template-product .page-width {
   max-width: none !important;
   padding-left: 0 !important;
-  padding-right: 0 !important;
 }
 body.template-product .clear {
   clear: both;
@@ -34,4 +36,15 @@ body.template-product .fs_product-single__images--big img {
 body.template-product .fs_product-single__meta {
   float: left;
   width: 40%;
+}
+body.template-product .fs_product-single__meta select {
+  border: 1px solid #000;
+  border-radius: 0;
+  background: url("//cdn.shopify.com/s/files/1/0267/3229/8274/t/3/assets/ico-select.svg?v=1206820173969048361") 95% center no-repeat;
+}
+body.template-product .fs_product-single__meta button {
+  border: 1px solid #000;
+  border-radius: 0;
+  background: #000;
+  color: #fff;
 }
