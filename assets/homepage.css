@@ -1,0 +1,21 @@
+body.template-index div[data-section-id="header"] {
+  position: fixed !important;
+  z-index: 10 !important;
+}
+body.template-index div[data-section-id="header"] .site-header {
+  background: 0 !important;
+}
+body.template-index div[data-section-id="header"] .site-nav {
+  margin-bottom: 0 !important;
+}
+body.template-index div[data-section-id="header"] .border-bottom {
+  border-bottom: 0 !important;
+}
+body.template-index .main-content {
+  padding-top: 0 !important;
+}
+@media all and (max-width: 748px) {
+  .site-header {
+    border-bottom: 0 !important;
+  }
+}

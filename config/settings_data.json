@@ -1,0 +1,504 @@
+{
+  "current": {
+    "show_homepage_video": true,
+    "carousel_video_hd_streaming_1": "https:\/\/player.vimeo.com\/external\/362162047.hd.mp4?s=76f26758f44432913a25110a54da8d2b109036a3&profile_id=175",
+    "carousel_video_hd_streaming_2": "https:\/\/player.vimeo.com\/external\/362162047.hd.mp4?s=76f26758f44432913a25110a54da8d2b109036a3&profile_id=174",
+    "carousel_video_sd_streaming": "https:\/\/player.vimeo.com\/external\/362162047.sd.mp4?s=7a795990fe1728523215656014c5c985a0d84b9b&profile_id=165",
+    "carousel_video_low_def_streaming": "https:\/\/player.vimeo.com\/external\/362162047.sd.mp4?s=7a795990fe1728523215656014c5c985a0d84b9b&profile_id=164",
+    "color_text": "#000000",
+    "color_body_text": "#060606",
+    "color_sale_text": "#657178",
+    "color_borders": "#f8fbfc",
+    "color_button": "#f3f6f9",
+    "color_button_text": "#000000",
+    "color_small_button": "#f3f6f9",
+    "color_small_button_text": "#000000",
+    "color_text_field": "#f3f6f9",
+    "color_text_field_text": "#000",
+    "color_image_overlay_text": "#000000",
+    "color_image_overlay": "#f0f5f9",
+    "image_overlay_opacity": "0",
+    "color_body_bg": "#ffffff",
+    "type_header_family": "Google_Montserrat_700_sans",
+    "type_header_base_size": "22px",
+    "type_base_family": "Georgia, 'Hoefler Text', 'Times New Roman', serif",
+    "type_base_size": "13px",
+    "type_bold_product_titles": true,
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "social_twitter_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/fisch.swim\/",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/FISCHSWIM\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/fisch.swim\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1990c6",
+    "checkout_error_color": "#ff6d6d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "center",
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logo_max_width": "150",
+          "main_linklist": "main-menu",
+          "message": true,
+          "message_text": "BLACK FRIDAY CODE: BLACKFISCH",
+          "message_link": "",
+          "color_bg": "#000203",
+          "color_text": "#fff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer_linklist": "footer",
+          "footer_linklist_two": "",
+          "footer_newsletter_enable": true,
+          "show_payment_icons": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_size": "medium",
+          "show_quantity_selector": true,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": true,
+          "show_share_buttons": true
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "blocks": {
+          "1517174436002": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "1517174842930": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1517174436002",
+          "1517174842930"
+        ],
+        "settings": {
+          "display_type": "selected",
+          "sort": "alphabetical",
+          "grid": "2"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": "3",
+          "rows": "8",
+          "show_collection_image": false,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "1517175159898": {
+        "type": "hero",
+        "disabled": true,
+        "settings": {
+          "image": "",
+          "alignment": "center",
+          "title": "",
+          "text": "",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/newsletter-fisch-logo.jpg",
+          "logo_max_width": "100",
+          "header": "Coming Soon"
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+          "newsletter_enable": false,
+          "newsletter_form_heading": "",
+          "newsletter_placeholder": "Email address",
+          "newsletter_button_text": "Notify me"
+        }
+      },
+      "password-footer": {
+        "type": "password-footer",
+        "settings": {
+          "show_share_buttons": true,
+          "social_message": ""
+        }
+      },
+      "1539595246411": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "1539595356359": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FISCH-RED-FOR-WEB.jpg",
+              "alignment": "center",
+              "title": "SHOP NOW",
+              "subheading": "",
+              "link": "shopify:\/\/collections\/new-in"
+            }
+          },
+          "1539595246411-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/fregate-for-web.jpg",
+              "alignment": "center",
+              "title": "SHOP NOW",
+              "subheading": "",
+              "link": "shopify:\/\/products\/fregate-jet-black"
+            }
+          }
+        },
+        "block_order": [
+          "1539595356359",
+          "1539595246411-0"
+        ],
+        "settings": {
+          "autoplay": true,
+          "autoplay_speed": "5000",
+          "slideshow_height": "large",
+          "text_size": "large"
+        }
+      },
+      "1557528714129": {
+        "type": "collection",
+        "disabled": true,
+        "settings": {
+          "title": "MADE IN ITALY FROM RECYCLED FISHING NETS.",
+          "collection": "",
+          "grid": "3",
+          "rows": "4",
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "1566742244964": {
+        "type": "slideshow",
+        "blocks": {
+          "1566742244964-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/JOSIE-TEST-1.gif",
+              "alignment": "center",
+              "title": "",
+              "subheading": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1566742244964-1"
+        ],
+        "settings": {
+          "autoplay": true,
+          "autoplay_speed": "5000",
+          "slideshow_height": "large",
+          "text_size": "medium"
+        }
+      },
+      "1576524735622": {
+        "type": "image-bar",
+        "blocks": {
+          "1576526965388": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/piracci-for-web.gif",
+              "alignment": "center",
+              "link": "shopify:\/\/products\/coquillage-jet-black",
+              "cta_label": ""
+            }
+          },
+          "1576526897246": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/piracci-for-web-2.gif",
+              "alignment": "center",
+              "link": "shopify:\/\/products\/grenadins-blue-reef",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1576526965388",
+          "1576526897246"
+        ],
+        "settings": {
+          "section_height": "x-large"
+        }
+      },
+      "1576525689232": {
+        "type": "custom-content",
+        "disabled": true,
+        "blocks": {
+          "1576525689232-0": {
+            "type": "text",
+            "settings": {
+              "title": "NEW ARRIVALS!",
+              "text": "",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1576525689232-0"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "1576528031652": {
+        "type": "feature-columns",
+        "disabled": true,
+        "blocks": {
+          "1576528031652-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/JOSIE-CROPPED.gif",
+              "title": "RAJALIN",
+              "text": "<p>Make a statement in the Rajalin Shimmer Hot Pink.&nbsp;Perfect for the beach to the bar - pairs well with flowing skirts and palazzo pants.<\/p>\n<p><\/p>",
+              "button_label": "SHOP NOW",
+              "button_link": "shopify:\/\/products\/rajalin-shimmer-hot-pink"
+            }
+          },
+          "1576528031652-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/cropped-leo.gif",
+              "title": "SUCRE",
+              "text": "<p>Business in front, party in the back.&nbsp;Sucre has a straight neckline in the front&nbsp;that highlights your d&eacute;colletage&nbsp;and a strappy adjustable back accentuating the waist.&nbsp;<\/p>",
+              "button_label": "SHOP NOW",
+              "button_link": "shopify:\/\/products\/sucre"
+            }
+          },
+          "1576528031652-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/MEGAN-CROPPED.gif",
+              "title": "CHOISY",
+              "text": "<p>Not your basic black maillot.&nbsp;This chic maillot stands out from the crowd with gold embellishment to make you stand out.&nbsp;<\/p>",
+              "button_label": "SHOP NOW",
+              "button_link": "shopify:\/\/products\/choisy-jet-black"
+            }
+          }
+        },
+        "block_order": [
+          "1576528031652-2",
+          "1576528031652-0",
+          "1576528031652-1"
+        ],
+        "settings": {
+          "title": "NEW ONE-PIECES",
+          "align_text": "left"
+        }
+      },
+      "1576529868139": {
+        "type": "collection",
+        "settings": {
+          "title": "NEW PAINTED LEO STYLES",
+          "collection": "made-in-italy-from-recycled-fishing-nets",
+          "grid": "2",
+          "rows": "2",
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "1576530136065": {
+        "type": "collection",
+        "settings": {
+          "title": "SHOP THE EDIT",
+          "collection": "piracci-edit",
+          "grid": "2",
+          "rows": "2",
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "1576531045749": {
+        "type": "slideshow",
+        "blocks": {
+          "1576531045749-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/JOSIE-AND-MEGAN-FOR-WEB-LEO.gif",
+              "alignment": "center",
+              "title": "",
+              "subheading": "",
+              "link": "shopify:\/\/products\/choisy-jet-black"
+            }
+          }
+        },
+        "block_order": [
+          "1576531045749-0"
+        ],
+        "settings": {
+          "autoplay": true,
+          "autoplay_speed": "5000",
+          "slideshow_height": "large",
+          "text_size": "large"
+        }
+      },
+      "1577730109477": {
+        "type": "collection",
+        "disabled": true,
+        "settings": {
+          "title": "Featured collection",
+          "collection": "new-year",
+          "grid": "2",
+          "rows": "2",
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "1577990347086": {
+        "type": "collection",
+        "settings": {
+          "title": "MADE IN ITALY FROM RECYCLED FISHING NETS",
+          "collection": "new-year",
+          "grid": "2",
+          "rows": "3",
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      }
+    },
+    "content_for_index": [
+      "1539595246411",
+      "1566742244964",
+      "1577990347086",
+      "1576531045749",
+      "1576529868139",
+      "1576524735622",
+      "1576530136065",
+      "1557528714129",
+      "1517175159898",
+      "1576525689232",
+      "1576528031652",
+      "1577730109477"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#788188",
+      "color_sale_text": "#7796A8",
+      "color_borders": "#e8e9eb",
+      "color_button": "#7796A8",
+      "color_button_text": "#fff",
+      "color_small_button": "#fff",
+      "color_small_button_text": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": "0.25",
+      "color_body_bg": "#fff",
+      "type_header_family": "Google_Work+Sans_600_sans",
+      "type_header_base_size": "26px",
+      "type_base_family": "Google_Work+Sans_400_sans",
+      "type_base_size": "16px",
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist_two": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row",
+        "slideshow"
+      ]
+    }
+  }
+}

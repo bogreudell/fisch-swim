@@ -1,0 +1,27 @@
+<div id="fs_video-wrapper">
+	{% if settings.show_homepage_video %}
+		<!-- desktop video -->
+		<video id="fs_video-wrapper--video" playsinline loop="true" muted autoplay="true" {% if settings.carousel-video-thumbnail.jpg != '' %} poster="https:{{ 'carousel-video-thumbnail.jpg' | asset_url }}" {% endif %}>
+			{% if settings.carousel_video_hd_streaming_1 != empty %}
+				<source src="{{ settings.carousel_video_hd_streaming_1 }}" type="video/mp4">
+			{% endif %}
+			{% if settings.carousel_video_hd_streaming_2 != empty %}
+				<source src="{{ settings.carousel_video_hd_streaming_2 }}" type="video/mp4">
+			{% endif %}
+			{% if settings.carousel_video_sd_streaming != empty %}
+				<source src="{{ settings.carousel_video_sd_streaming}}" type="video/mp4">
+			{% endif %}
+			{% if settings.carousel_video_low_def_streaming != empty %}
+				<source src="{{ settings.carousel_video_low_def_streaming }}" type="video/mp4">
+			{% endif %}
+		</video><!-- end desktop video -->
+		<div id="fs_video-controls">
+			<div id="fs_controls-wrapper">
+				<button id="fs_play"><i class="fal fa-play"></i></button>
+				<button id="fs_pause"><i class="fal fa-pause"></i></button>
+				<button id="fs_volume-on"><i class="fal fa-volume-up"></i></button>
+				<button id="fs_volume-off"><i class="fal fa-volume-mute"></i></button>
+			</div>
+		</div>
+	{% endif %}
+</div>
