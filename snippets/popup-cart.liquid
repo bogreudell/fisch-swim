@@ -1,0 +1,45 @@
+<!-- Ajax Cart -->
+<div id="cartDrawer" class="no-click">
+	<div id="cartDrawerInner">
+		<!-- might get rid of this -->
+		<!-- <button>{{ 'x.svg' | asset_url | img_tag }}</button> -->
+		{% assign count = 0 %}
+		<h2 class="custom-font product-description-header">Your Bag (<span class="cart-count">{{ cart.item_count }}</span>)</h2>
+		<div id="cartDrawerContent">
+			<div id="cartDrawerProducts">
+				<!-- cart items are appended here -->
+				{% for item in cart.items %}
+					<div class="oi_cart-item">
+                        <img src="{{ item | img_url: 'original' }}" alt="{{ item.product.title }}" />
+                        <h1 class="custom-font product-description-header">
+                        	{{ item.product.title }} 
+                        </h1> 
+                        <p>{{ item.variant.title }}</p>
+                        <p>
+                        	<span class="money">
+                        		{{ item.price | money }}
+                        	</span>
+                        </p> 
+                        <p class="cart-drawer__qty">
+                        	<span>Quantity:</span>
+                        	<input data-variant="{{ item.variant.id }}" type="number" value="{{ item.quantity }}"/>
+                        	<button class="qty-minus">-</button>
+                        	<span>/</span>
+                        	<button class="qty-plus">+</button>
+                        </p>
+                        <button class="oi_cart-item__remove">Remove</button>
+                    </div>
+				{% endfor %}
+			</div>
+			<div class="cart-drawer-textarea-wrap">
+				<textarea cols="30" rows="3" placeholder="Add a Note...">{{ cart.note }}</textarea>
+				<button id="oi_cart-note__save">Save</button>
+			</div>
+		</div>	
+		<form action="/cart" method="post">
+			<input id="cart_submit" type="submit" value="
+			Check Out" name="checkout" class="btn btn-default proceedToCart">
+		</form>
+	</div>
+</div>
+<!-- /Ajax Cart -->

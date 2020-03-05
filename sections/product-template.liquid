@@ -36,10 +36,9 @@
           <h1>So sorry, images aren't loading right now.</h1>
         {% endif %}
     </div><!-- /product images -->
-
+  
     <!-- product meta -->
     <div class="fs_product-single__meta">
-
       <h1 itemprop="name" class="fs_product-single__title">{{ product.title }}</h1>
 
       {% if section.settings.show_vendor %}
@@ -124,7 +123,6 @@
             </button>
           </div>
         </form>
-
       </div>
 
       <div class="product-single__description rte" itemprop="description">
@@ -138,6 +136,8 @@
 
     <div class="clear"></div>
   </div><!-- /product single main -->
+  
+  {% include 'related-products' %}
 
 {% if collection %}
   <div class="text-center return-link-wrapper">

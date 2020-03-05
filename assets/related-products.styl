@@ -1,0 +1,32 @@
+.product-single__related-products
+	max-width 90%
+	margin auto
+	overflow auto
+
+	.fs_product-thumbnail
+		width calc(100%/3)
+		float left
+		position relative
+		box-sizing border-box
+		border-right 20px solid #fff
+		
+		&:last-of-type
+			border-right 0
+		
+		&__image
+			width 100%
+			padding-bottom 150%
+			background-size cover !important
+
+		&__label		
+			position absolute
+			bottom 0
+			width 100%
+			padding 2.5%
+			label()
+			
+			&--title
+				float left
+			
+			&--price
+				float right

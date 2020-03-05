@@ -5,7 +5,6 @@ body
 		.page-width
 			max-width none !important
 			padding-left 0 !important
-			// padding-right 0 !important
 			
 		.clear
 			clear both
@@ -39,7 +38,15 @@ body
 			
 			&__meta
 				float left
-				width 40%
+				width 38%
+				margin-left 2%
+				
+				&.fixed
+					position fixed !important
+					top 55px !important
+					right 57px !important
+					float none !important
+					width 36.258% !important
 			
 				input
 					label()
@@ -56,6 +63,11 @@ body
 					background #000
 					label()
 					color #fff
+				
+				/* phase out default theme classes */
+				.product-single__description
+					font-size 1.75rem
+					line-height 2rem
 
 			&__title,
 			&__price

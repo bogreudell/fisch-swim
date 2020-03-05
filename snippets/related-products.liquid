@@ -1,0 +1,14 @@
+{% if product.tags.size > 0 %}
+	<div class="product-single__related-products">
+		<h1>You May Also Like</h1>
+		{% capture current_product %}{{ product.title }}{% endcapture %}
+		{% for tag in product.tags %}
+			{% capture current_tag %}{{ tag }}{% endcapture %}
+			{% for product in collections.all.products %}
+			  {% if product.title != current_product and product.tags contains current_tag %}
+			  	{% include 'product-thumbnail' %}
+			  {% endif %}
+			{% endfor %}
+		{% endfor %}
+	</div>
+{% endif %}
