@@ -1,12 +1,9 @@
 <div class="fs_product-thumbnail">
 	<a href="{{ product.url }}">
-		<!-- default image -->
-		<div class="fs_product-thumbnail__image" style="background:url({{ product.featured_image | product_img_url: 'original' }}) center center no-repeat;" alt="{{ product.featured_image.alt | escape }}"></div>
-		<!-- rollover image, to be added later -->
-		<!-- -->
+		<div class="fs_product-thumbnail__image" style="background:url({{ product.featured_image | product_img_url: 'original' }}) center center no-repeat;"></div>
 		<div class="fs_product-thumbnail__label">
 			<p class="fs_product-thumbnail__label--title">{{ product.title }}</p>
-			<p class="fs_product-thumbnail__label--price">{{ product.price }}</p>
+			<p class="fs_product-thumbnail__label--price">{{ product.price | money }}</p>
 		</div>
 	</a>
 </div>

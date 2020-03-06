@@ -1,32 +1,59 @@
 .product-single__related-products
-	max-width 90%
-	margin auto
-	overflow auto
+	position fixed
+	left 0
+	bottom -100%
+	width 100vw
+	z-index 3
+	background #000
+	-webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12)
+	box-shadow 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.1)
+	transition .2s bottom ease-in-out
+	
+	&.slide-in
+		bottom 0
+	
+	h2
+		margin 10px
+		label()
+		font-size 2rem
+		color #fff
 
-	.fs_product-thumbnail
-		width calc(100%/3)
-		float left
-		position relative
-		box-sizing border-box
-		border-right 20px solid #fff
-		
-		&:last-of-type
-			border-right 0
-		
-		&__image
-			width 100%
-			padding-bottom 150%
-			background-size cover !important
+	.product-single__related-products__thumbnails
+		overflow-x scroll
+		white-space nowrap
 
-		&__label		
-			position absolute
-			bottom 0
-			width 100%
-			padding 2.5%
-			label()
+		.fs_product-thumbnail
+			width calc(100%/5)
+			display inline-block
+			position relative
+			margin-bottom -3px
 			
-			&--title
-				float left
-			
-			&--price
-				float right
+			&__image
+				width 100%
+				padding-bottom 125%
+				background-size cover !important
+
+			&__label		
+				position absolute
+				bottom 0
+				width 100%
+				padding 2.5%
+				label()
+				background #fff
+				opacity 1 !important
+				
+				&--title,
+				&--price
+					margin-bottom 0
+
+@media all and (max-width 768px)
+	.product-single__related-products
+		h2
+			font-size 1.2rem !important
+				
+		.product-single__related-products__thumbnails
+			.fs_product-thumbnail
+				width calc(100%/2.5) !important
+				
+				&__label
+					display none !important

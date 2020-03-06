@@ -1,16 +1,41 @@
+/* make this modular */
+var toggleModule = function() {
+	$('body').addClass('ac_no-scroll');
+	$('.product-single__related-products').addClass('slide-in');
+	$('.product-single__related-products *').addClass('ac_no-click');
+
+	$('body').on('click', function(e){
+	  if ( !$(e.target).hasClass('ac_no-click') ) {
+	    $('product-single__related-products').removeClass('slide-in');
+	    $('body').removeClass('ac_no-scroll');          
+	  }
+	});
+
+	$(document).keyup(function(e){
+	  if ( e.keyCode === 27 ){
+	    $('.product-single__related-products').removeClass('slide-in');
+	    $('body').removeClass('ac_no-scroll');
+	  }
+	});
+}
+
 /* Fixed Product Info */
 function fixedProductMeta(){
 
-	var $productMeta = $('.fs_product-single__meta'),
-		$productMetaOffset = $productMeta.offset().top - 55,
+	// necessary to have two elements here?
+	var $productMetaStatic = $('.fs_product-single__meta'),
+		$productMetaStaticOffset = $productMetaStatic.offset().top - 55,
+		$productMetaAnimated = $('.fs_product-single__meta--fixed'),
 		$lastImage = $('.fs_product-single__images--big img:last-of-type'),
 		$lastImageOffset = $lastImage.offset().top;
 
 	$(window).scroll(function(){
-		if ( $(window).scrollTop() > $productMetaOffset && $(window).scrollTop() < $lastImageOffset ){ 
-			$productMeta.addClass('fixed');
+		if ( $(window).scrollTop() > $productMetaStaticOffset && $(window).scrollTop() < $lastImageOffset ){ 
+			$productMetaStatic.attr('style','opacity:0');
+			$productMetaAnimated.addClass('slide-in');
 		} else {
-			$productMeta.removeClass('fixed');
+			$productMetaStatic.attr('style','opacity:1');
+			$productMetaAnimated.removeClass('slide-in');
 		}
 	});
 }

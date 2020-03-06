@@ -3,7 +3,10 @@ body.template-product {
 }
 body.template-product .page-width {
   max-width: none !important;
+  width: 95% !important;
+  margin-left: 0 !important;
   padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 body.template-product .clear {
   clear: both;
@@ -39,12 +42,15 @@ body.template-product .fs_product-single__meta {
   margin-left: 2%;
 /* phase out default theme classes */
 }
-body.template-product .fs_product-single__meta.fixed {
+body.template-product .fs_product-single__meta--fixed {
   position: fixed !important;
   top: 55px !important;
-  right: 57px !important;
-  float: none !important;
-  width: 36.258% !important;
+  right: -100% !important;
+  width: 36.1% !important;
+  opacity: 1 !important;
+}
+body.template-product .fs_product-single__meta--fixed.slide-in {
+  right: 5% !important;
 }
 body.template-product .fs_product-single__meta select {
   border: 1px solid #000;
@@ -57,7 +63,49 @@ body.template-product .fs_product-single__meta button {
   background: #000;
   color: #fff;
 }
-body.template-product .fs_product-single__meta .product-single__description {
-  font-size: 1.75rem;
-  line-height: 2rem;
+body.template-product .fs_product-single__meta .product-single__description p,
+body.template-product .fs_product-single__meta .product-single__description span,
+body.template-product .fs_product-single__meta .product-single__description strong {
+  font-size: 1.75rem !important;
+  line-height: 2rem !important;
+}
+@media all and (max-width: 768px) {
+  body.template-product .page-width {
+    width: 100% !important;
+  }
+  body.template-product .page-width .fs_product-single__images {
+    float: none !important;
+    width: 100%;
+  }
+  body.template-product .page-width .fs_product-single__images--small {
+    display: none !important;
+  }
+  body.template-product .page-width .fs_product-single__images--big {
+    width: 100% !important;
+    height: 60vh;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden !important;
+  }
+  body.template-product .page-width .fs_product-single__images--big img {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    vertical-align: top;
+  }
+  body.template-product .page-width .fs_product-single__images--big img:first-of-type {
+    padding-left: 0;
+  }
+  body.template-product .page-width .fs_product-single__meta {
+    float: none !important;
+    width: 95% !important;
+    margin: auto !important;
+    opacity: 1 !important;
+  }
+  body.template-product .page-width .fs_product-single__meta--fixed {
+    display: none !important;
+  }
+  body.template-product .page-width .fs_product-single__title {
+    margin-top: 20px !important;
+  }
 }

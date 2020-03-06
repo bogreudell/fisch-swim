@@ -137,6 +137,10 @@
     <div class="clear"></div>
   </div><!-- /product single main -->
   
+  {% comment %}
+    Fixed modules that slide in and out as the user scrolls.
+  {% endcomment %}
+  {% include 'fixed-product-meta' %}
   {% include 'related-products' %}
 
 {% if collection %}
