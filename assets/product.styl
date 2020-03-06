@@ -1,0 +1,124 @@
+body
+	&.template-product
+		font-family $serif
+		
+		.page-width
+			max-width none !important
+			width 95% !important
+			margin-left 0 !important
+			padding-left 0 !important
+			padding-right 0 !important
+			
+		.clear
+			clear both
+				
+		.fs_product-single
+			&__images
+				float left
+				width 60%
+				
+				&--small,
+				&--big
+					img
+						display block
+						width 100%
+						height auto
+				
+				&--small
+					float left
+					width 20%
+					
+					img
+						margin-bottom 3px
+				
+				&--big
+					float left
+					width 80%
+					
+					img
+						padding-left 3px
+						margin-bottom 3px
+			
+			&__meta
+				float left
+				width 38%
+				margin-left 2%
+				
+				&--fixed
+					position fixed !important
+					top 55px !important
+					right -100% !important
+					width 36.1% !important
+					opacity 1 !important
+					
+					&.slide-in
+						right 5% !important
+			
+				input
+					label()
+				
+				select
+					border 1px solid #000
+					border-radius 0
+					background url(//cdn.shopify.com/s/files/1/0267/3229/8274/t/3/assets/ico-select.svg?v=1206820173969048361) 95% center no-repeat
+					label()
+				
+				button
+					border 1px solid #000
+					border-radius 0
+					background #000
+					label()
+					color #fff
+				
+				/* phase out default theme classes */
+				.product-single__description
+					p, span, strong
+						serif() !important
+						font-size 1.75rem !important
+						line-height 2rem !important
+
+			&__title,
+			&__price
+				heading()
+
+@media all and (max-width 768px)
+	body
+		&.template-product
+			.page-width
+				width 100% !important
+				
+				.fs_product-single
+					&__images
+						float none !important
+						width 100%
+						
+						&--small
+							display none !important
+						
+						&--big
+							width 100% !important
+							height 60vh
+							white-space nowrap
+							overflow-x scroll
+							overflow-y hidden !important
+
+							img
+								display inline-block
+								height 100%
+								width auto
+								vertical-align top
+								
+								&:first-of-type
+									padding-left 0
+						
+					&__meta
+						float none !important
+						width 95% !important
+						margin auto !important
+						opacity 1 !important
+						
+						&--fixed
+							display none !important
+					
+					&__title
+						margin-top 20px !important

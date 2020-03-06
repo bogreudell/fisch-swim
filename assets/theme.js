@@ -311,15 +311,15 @@ theme.Images = (function() {
    * @param {string} src
    * @returns {null}
    */
-  function imageSize(src) {
-    var match = src.match(/.+_((?:pico|icon|thumb|small|compact|medium|large|grande)|\d{1,4}x\d{0,4}|x\d{1,4})[_\.@]/);
+  // function imageSize(src) {
+  //   var match = src.match(/.+_((?:pico|icon|thumb|small|compact|medium|large|grande)|\d{1,4}x\d{0,4}|x\d{1,4})[_\.@]/);
 
-    if (match !== null) {
-      return match[1];
-    } else {
-      return null;
-    }
-  }
+  //   if (match !== null) {
+  //     return match[1];
+  //   } else {
+  //     return null;
+  //   }
+  // }
 
   /**
    * +++ Useful
@@ -358,7 +358,7 @@ theme.Images = (function() {
     preload: preload,
     loadImage: loadImage,
     switchImage: switchImage,
-    imageSize: imageSize,
+    // imageSize: imageSize,
     getSizedImageUrl: getSizedImageUrl,
     removeProtocol: removeProtocol
   };
@@ -2294,8 +2294,8 @@ theme.Product = (function() {
       mediaQuerySmall: 'screen and (max-width: 749px)',
       bpSmall: false,
       enableHistoryState: $container.data('enable-history-state') || false,
-      imageSize: null,
-      imageZoomSize: null,
+      // imageSize: null,
+      // imageZoomSize: null,
       namespace: '.slideshow-' + sectionId,
       sectionId: sectionId,
       sliderActive: false,
@@ -2329,7 +2329,7 @@ theme.Product = (function() {
     this.productSingleObject = JSON.parse(document.getElementById('ProductJson-' + sectionId).innerHTML);
 
     this.settings.zoomEnabled = $(this.selectors.productFeaturedImage).hasClass('js-zoom-enabled');
-    this.settings.imageSize = theme.Images.imageSize($(this.selectors.productFeaturedImage).attr('src'));
+    // this.settings.imageSize = theme.Images.imageSize($(this.selectors.productFeaturedImage).attr('src'));
 
     if (this.settings.zoomEnabled) {
       this.settings.imageZoomSize = theme.Images.imageSize($(this.selectors.productImageWrap).data('zoom'));
@@ -2343,7 +2343,7 @@ theme.Product = (function() {
 
     // Pre-loading product images to avoid a lag when a thumbnail is clicked, or
     // when a variant is selected that has a variant image
-    theme.Images.preload(this.productSingleObject.images, this.settings.imageSize);
+    // theme.Images.preload(this.productSingleObject.images, this.settings.imageSize);
   }
 
   Product.prototype = _.assignIn({}, Product.prototype, {
