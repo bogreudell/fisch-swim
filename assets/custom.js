@@ -21,23 +21,16 @@ var toggleModule = function() {
 
 /* Fixed Product Info */
 function fixedProductMeta(){
-
-	// necessary to have two elements here?
 	var $productMetaStatic = $('.fs_product-single__meta'),
 		$productMetaStaticOffset = $productMetaStatic.offset().top - 55,
-		//$productMetaAnimated = $('.fs_product-single__meta--fixed'),
 		$lastImage = $('.fs_product-single__images--big img:last-of-type'),
 		$lastImageOffset = $lastImage.offset().top;
 
 	$(window).scroll(function(){
 		if ( $(window).scrollTop() > $productMetaStaticOffset && $(window).scrollTop() < $lastImageOffset ){ 
 			$productMetaStatic.addClass('--fixed');
-			//$productMetaStatic.attr('style','opacity:0');
-			//$productMetaAnimated.addClass('slide-in');
 		} else {
 			$productMetaStatic.removeClass('--fixed');
-			//$productMetaStatic.attr('style','opacity:1');
-			//$productMetaAnimated.removeClass('slide-in');
 		}
 	});
 }
