@@ -110,7 +110,8 @@
             </div>
           {% endif %}
           {% endcomment %}
-
+          
+          
           <div class="product-form__item product-form__item--submit">
             <button type="submit" name="add" id="AddToCart-{{ section.id }}" {% unless current_variant.available %}disabled="disabled"{% endunless %} class="btn product-form__cart-submit{% if product.options.size == 1 and product.variants[0].title == 'Default Title' %} product-form__cart-submit--small{% endif %}">
               <span id="AddToCartText-{{ section.id }}">
@@ -140,7 +141,7 @@
   {% comment %}
     Fixed modules that slide in and out as the user scrolls.
   {% endcomment %}
-  {% include 'fixed-product-meta' %}
+  {%comment%}{% include 'fixed-product-meta' %}{%endcomment%}
   {% include 'related-products' %}
 
 {% if collection %}
